@@ -1,0 +1,1 @@
+To open server: ng serve
