@@ -69,5 +69,9 @@ export class StockService {
     return this.saleItemList.filter(saleItem => saleItem.price < price)
   }
 
+  submitApplication(name: string, email: string) {
+    console.log('Application received: ${name} - ${email}');
+  }
+
   constructor() { }
 }
