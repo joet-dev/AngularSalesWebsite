@@ -1,10 +1,17 @@
-.results {
-    display: grid;
-    column-gap: 14px;
-    row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    margin-top: 50px;
-    justify-content: space-around;
+.home-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.items-body {
+    margin: auto;
+    width: 80%;
+}
+
+.search-section {
+    display: block;
+    text-align: center;
 }
 
 input[type="text"] {
@@ -14,31 +21,42 @@ input[type="text"] {
     margin-right: 4px;
     display: inline-block;
     width: 30%;
+    
 }
 
-.resultssection {
-    padding-top: 30px;
-}
-
-.searchbutton {
+.search-button {
     padding: 10px;
-    border: solid 1px var(--primary-color);
+    border: solid 2px var(--primary-color);
     background: var(--primary-color);
     color: white;
     border-radius: 8px;
-} 
+}
 
-@media (min-width: 500px) and (max-width: 768px) {
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+    .items-body {
+        width: 95%
+    }
+
     .results {
         grid-template-columns: repeat(2, 1fr);
     }
+
     input[type="text"] {
         width: 70%;
-    }   
-  }
-  
-  @media (max-width: 499px) {
+    }
+}
+
+@media (max-width: 499px) {
     .results {
         grid-template-columns: 1fr;
-    }    
-  }
+    }
+}
