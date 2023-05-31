@@ -13,7 +13,7 @@ export class StockService {
       price: 100,
       modelNo: "XYZ123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export class StockService {
       price: 100000,
       modelNo: "TEST123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export class StockService {
       price: 100000,
       modelNo: "TEST123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export class StockService {
       price: 100000,
       modelNo: "TEST123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ export class StockService {
       price: 100000,
       modelNo: "TEST123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
     {
       id: 6,
@@ -53,12 +53,16 @@ export class StockService {
       price: 100000,
       modelNo: "TEST123",
       photo: 'assets/logo.svg',
-      description: "Fast matchbox car."
+      description: "Introducing the 1:60 scale model car, a meticulously crafted replica that captures the essence of its larger counterpart. Whether you're a passionate collector or simply appreciate the charm of automobiles, this affordable and captivating model car is a must-have. Get ready to experience the joy and magic of automotive fascination in a small, but mighty package."
     },
   ];
 
   getAllSaleItems(): SaleItem[] {
     return this.saleItemList;
+  }
+
+  getSaleItemById(id: number): SaleItem | undefined {
+    return this.saleItemList.find(saleItem => saleItem.id === id)
   }
 
   getSaleItemByPriceLessThan(price: number): SaleItem[] | undefined {

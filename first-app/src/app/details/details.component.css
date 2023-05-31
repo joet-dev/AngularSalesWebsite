@@ -1,0 +1,124 @@
+.detail-body {
+  padding-top: 30px;
+  margin: auto; 
+  width: 80%; 
+  display: flex;
+}
+
+.detail-image-wrapper {
+  background: var(--accent-color);
+  overflow: hidden;
+  border-radius: 30px;
+  width: 500px;
+  aspect-ratio: 1/1;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 15px;
+}
+
+.listing-photo {
+  width: 90%;
+  margin: auto; 
+}
+
+.detail-text-wrapper {
+  background: var(--accent-color);
+  border-radius: 30px;
+  width: 50%;
+  float: right;
+  position: relative;
+  padding: 20px;
+  margin: 15px;
+}
+
+.listing-heading {
+  font-size: 48pt;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.listing-price {
+  font-size: 30pt;
+}
+
+.listing-model::before {
+  content: url('/assets/location-pin.svg') / '';
+}
+
+.listing-model {
+  margin-bottom: 15px;
+}
+
+.listing-features>.section-heading {
+  color: var(--secondary-color);
+  font-size: 24pt;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.listing-features {
+  margin-bottom: 20px;
+}
+
+.listing-features li {
+  font-size: 14pt;
+}
+
+li {
+  list-style-type: none;
+}
+
+.listing-apply .section-heading {
+  font-size: 18pt;
+  margin-bottom: 15px;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+
+input {
+  font-size: 16pt;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 400px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid .3px;
+}
+
+@media (max-width: 1000px) {
+  .detail-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-image-wrapper {
+    width: 80%;
+  }
+  .detail-text-wrapper {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  
+  .detail-image-wrapper {
+    width: 100%;
+  }
+  .detail-text-wrapper {
+    width: 100%;
+  }
+}
