@@ -1,4 +1,4 @@
-<h1 style='text-align: center;'>Welcome to the official Diecast'n'Drift website!</h1>
+<h1 class="welcome-banner">Welcome to the official Diecast'n'Drift website!</h1>
 <div class="home-body">
     <div class="items-body">
         <section class="search-section">
@@ -8,7 +8,10 @@
             </form>
         </section>
         <section class="results">
-            <app-sale-item [saleItem]="saleItem"></app-sale-item>
+            <app-sale-item 
+            *ngFor="let saleItem of saleItemList"
+            [saleItem]="saleItem">
+            </app-sale-item>
         </section>
     </div>
 </div>

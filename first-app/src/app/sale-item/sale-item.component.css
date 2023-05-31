@@ -1,8 +1,16 @@
+:root {
+    
+}
+
 .listing {
     background: var(--accent-color);
     overflow: hidden;
     border-radius: 30px;    
     padding-bottom: 30px;
+}
+
+.listing:hover{
+    background: var(--hover-color);
 }
 
 .listing-heading {
