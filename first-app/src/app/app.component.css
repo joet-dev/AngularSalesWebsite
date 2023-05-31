@@ -10,3 +10,15 @@ header {
 .content {
   padding: var(--content-padding);
 }
+
+
+/* Header */
+.brand-name {
+  width: 100%;
+  text-align: center;
+}
+
+.brand-logo { 
+  width: 200px;
+  margin: 0 auto;
+}
